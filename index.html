@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cont">
+            <div>
+                <label class="mb-1"  for="sum">Сумма кредита: (денежные единицы)</label>
+                <input class="form-control" type="number" id="sum" value="100">
+            </div>
+            <div>
+                <label class="mb-1 " for="percent">Процентная ставка: (% годовых)</label>
+                <input class="form-control" type="number" id="percent" value="60">
+            </div>
+            <div>
+                <label class="mb-1"  for="term">Срок кредитования: (месяцев)</label>
+                <input class="form-control" type="number" id="term" value="12">
+            </div>
+            <div class="btn btn-primary" id="btn">Рассчитать</div>
+        </div>
+        <h2 id="warn" class="mt-2"></h2>
+        <table class="table mt-5 d-none"  id="table">
+            <thead>
+              <tr>
+                <th scope="col" class=" ellipsis">Месяц</th>
+                <th scope="col" class=" ellipsis">Задолженность по кредиту</th>
+                <th scope="col" class=" ellipsis">Погашение кредита</th>
+                <th scope="col" class=" ellipsis">Проценты по кредиту</th>
+                <th scope="col" class=" ellipsis">Выплаты в месяц</th>
+              </tr>
+            </thead>
+            <tbody  id="tableBody">
+              
+            </tbody>
+        </table>
+          
+    </div>    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
